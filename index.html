@@ -1,0 +1,455 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/02da72e532.js" crossorigin="anonymous"></script>
+    <title>Naruto students</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="tab">
+        <table class="table table-hover table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">S.No</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Itachi</td>
+                    <td>Uchiha</td>
+                    <td>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#Modal1">
+                            info
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Naruto </td>
+                    <td>Uzumaki</td>
+                    <td>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#Modal2">
+                            info
+                        </button>
+
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Sasuke</td>
+                    <td>Uchiha</td>
+                    <td>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#Modal3">
+                            info
+                        </button>
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Kakashi</td>
+                    <td>Hatake</td>
+                    <td>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#Modal4">
+                            info
+                        </button>
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Minato</td>
+                    <td>Namikaze</td>
+                    <td>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#Modal5">
+                            info
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Jiraiya</td>
+                    <td></td>
+                    <td>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#Modal6">
+                            info
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Madara</td>
+                    <td>Uchiha</td>
+                    <td>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#Modal7">
+                            info
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>Might</td>
+                    <td>Guy</td>
+                    <td>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#Modal8">
+                            info
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td>Boruto</td>
+                    <td>Uzumaki</td>
+                    <td>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#Modal9">
+                            info
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">10</th>
+                    <td>Kawaki</td>
+                    <td></td>
+                    <td>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#Modal10">
+                            info
+                        </button>
+                    </td>
+                </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+    <!-- modals -->
+    <div>
+        <!-- Modal 1-->
+        <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Itachi Uchiha</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/ch1.jpg" alt="Itachi Uchiha">
+                        <h3>Itachi Uchiha</h3>
+                        <div>
+                            <p>Itachi Uchiha (うちはイタチ, Uchiha Itachi) was a shinobi of Konohagakure's Uchiha
+                                clan who served as an Anbu Captain. He later became an international
+                                criminal after murdering his entire clan, sparing only his younger brother,
+                                Sasuke. </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Naruto Uzumaki
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/ch2.jpg" alt="Naruto Uzumaki">
+                        <h3>Naruto Uzumaki
+                        </h3>
+                        <div>
+                            <p>Naruto Uzumaki (うずまきナルト, Uzumaki Naruto) is a shinobi of Konohagakure's
+                                Uzumaki clan. He became the jinchūriki of the Nine-Tails on the day of his
+                                birth — a fate that caused him to be shunned by most of Konoha throughout
+                                his childhood. After joining Team Kakashi, Naruto worked hard to gain the
+                                village's acknowledgement all the while chasing his dream to become Hokage.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 3 -->
+        <div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Sasuke Uchiha</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/ch3.jpg" alt="Sasuke Uchiha">
+                        <h3>Sasuke Uchiha</h3>
+                        <div>
+                            <p>Sasuke Uchiha (うちはサスケ, Uchiha Sasuke) is one of the last surviving members of
+                                Konohagakure's Uchiha clan. After his older brother, Itachi, slaughtered
+                                their clan, Sasuke made it his mission in life to avenge them by killing
+                                Itachi. He is added to Team 7 upon becoming a ninja and, through competition
+                                with his rival and best friend, Naruto Uzumaki, Sasuke starts developing his
+                                skills. Dissatisfied with his progress, he defects from Konoha so that he
+                                can acquire the strength needed to exact his revenge.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 4-->
+        <div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Kakashi Hatake</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/ch4.jpg" alt="Kakashi Hatake">
+                        <h3>Kakashi Hatake</h3>
+                        <div>
+                            <p>Kakashi Hatake (はたけカカシ, Hatake Kakashi) is a shinobi of Konohagakure's Hatake
+                                clan. Famed as Kakashi of the Sharingan (写輪眼のカカシ, Sharingan no Kakashi), he
+                                is one of Konoha's most talented ninja, regularly looked to for advice and
+                                leadership despite his personal dislike of responsibility. To his students
+                                on Team 7, Kakashi emphasises the importance of teamwork; he himself
+                                received this lesson, along with the Sharingan, from his childhood friend,
+                                Obito Uchiha.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 5-->
+        <div class="modal fade" id="Modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Minato Namikaze</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/ch5.jpg" alt="Minato Namikaze">
+                        <h3>Minato Namikaze</h3>
+                        <div>
+                            <p>Minato Namikaze (波風ミナト, Namikaze Minato) was the Fourth Hokage (四代目火影,
+                                Yondaime Hokage, literally meaning: Fourth Fire Shadow) of Konohagakure. He
+                                was renowned all over the world as Konoha's Yellow Flash (木ノ葉の黄色い閃光, Konoha
+                                no Kiiroi Senkō, English TV: Yellow Flash of the Leaf). He died during the
+                                Nine-Tailed Demon Fox's Attack, sacrificing his life to seal a part of the
+                                Nine-Tails into his newborn son, Naruto Uzumaki.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 6-->
+        <div class="modal fade" id="Modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Jiraiya</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/ch6.jpg" alt="Jiraiya">
+                        <h3>Jiraiya</h3>
+                        <div>
+                            <p>Jiraiya (自来也) was one of Konohagakure's Sannin. Famed as a hermit and pervert of
+                                stupendous ninja skill, Jiraiya travelled the world in search of knowledge that would
+                                help his friends, the various novels he wrote, and, posthumously, the world in its
+                                entirety – knowledge that would be passed on to his godson and final student, Naruto
+                                Uzumaki.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 7-->
+        <div class="modal fade" id="Modal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Madara Uchiha</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/ch7.jpg" alt="Madara Uchiha">
+                        <h3>Madara Uchiha</h3>
+                        <div>
+                            <p>Madara Uchiha (うちはマダラ, Uchiha Madara) was the legendary leader of the Uchiha clan. He
+                                founded Konohagakure alongside his childhood friend and rival, Hashirama Senju, with the
+                                intention of beginning an era of peace. When the two couldn't agree on how to achieve
+                                that peace, they fought for control of the village, a conflict which ended in Madara's
+                                death. Madara, however, rewrote his death and went into hiding to work on his own plans.
+                                Unable to complete it in his natural life, he entrusted his knowledge and plans to Obito
+                                Uchiha shortly before his actual death.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 8-->
+        <div class="modal fade" id="Modal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Might Guy</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/ch8.png" alt="Might Guy">
+                        <h3>Might Guy</h3>
+                        <div>
+                            <p>Guy is the son of Might Duy, who was known throughout Konoha as the "Eternal Genin". Duy
+                                was not bothered by this moniker and instead was grateful that other people cared enough
+                                to know him at all. Duy encouraged this same kind of optimism in Guy, as well as his
+                                belief that one always has youth and that they could both become taijutsu masters
+                                through diligent training. Guy did his best to embody his father's teachings, but had
+                                doubts that Duy's words were devoid of meaning. He nevertheless loved his father and
+                                fought others when they called Duy the "Eternal Genin" mockingly; when one of these
+                                fights landed him in the Konoha Hospital, Duy encouraged Guy not to be upset by this
+                                loss and to instead remember that victory is achieved by defending things that are
+                                important.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 9-->
+        <div class="modal fade" id="Modal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Boruto Uzumaki</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/ch9.jpg" alt="Boruto Uzumaki">
+                        <h3>Boruto Uzumaki</h3>
+                        <div>
+                            <p>Boruto Uzumaki (うずまきボルト, Uzumaki Boruto) is a shinobi from Konohagakure's Uzumaki clan
+                                and a direct descendant of the Hyūga clan through his mother. While initially resentful
+                                of his father and his absence since becoming Hokage, Boruto eventually comes to respect
+                                his father and duties. Regardless, he vows to instead become a shinobi like his mentor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 10-->
+        <div class="modal fade" id="Modal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Kawaki</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/ch10.jpg" alt="Kawaki">
+                        <h3>Kawaki</h3>
+                        <div>
+                            <p>Kawaki (カワキ, Kawaki) is a child raised by Kara to be the future vessel for Isshiki
+                                Ōtsutsuki and the key to the fulfilment of their greatest wish.[1] After being brought
+                                to Konohagakure by Team 7, he is taken in by Naruto Uzumaki who raises him as his own,
+                                during which he develops a brotherly bond with Boruto Uzumaki to solve the mystery of
+                                the Kāma.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
